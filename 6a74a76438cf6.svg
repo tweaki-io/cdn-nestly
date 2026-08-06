@@ -1,0 +1,38 @@
+<svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="roofGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#186B48"/>
+      <stop offset="100%" stop-color="#2F8F63"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mark: minimal line-art house-face, symmetric roof, heart accent instead of chimney -->
+  <g transform="translate(140,150)">
+    <!-- symmetric roof, single clean stroke, no fill panel -->
+    <path d="M -56 8 L 0 -50 L 56 8"
+          fill="none" stroke="url(#roofGrad2)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- walls / face outline, straight sides dropping from the eaves -->
+    <path d="M -56 8 L -56 40" fill="none" stroke="#0B3A28" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 56 8 L 56 40" fill="none" stroke="#0B3A28" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- eyes, simple closed happy-arcs instead of dots -->
+    <path d="M -30 12 Q -22 4 -14 12" fill="none" stroke="#0B3A28" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 14 12 Q 22 4 30 12" fill="none" stroke="#0B3A28" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- smile -->
+    <path d="M -20 28 Q 0 44 20 28" fill="none" stroke="#0B3A28" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- small ruby heart resting at the roof peak, like a little porch light -->
+    <path d="M 0 -58 C -6 -66 -16 -60 0 -48 C 16 -60 6 -66 0 -58 Z" fill="#B33B4E"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="248" y="140" font-family="Georgia, 'Times New Roman', serif" font-size="72"
+        fill="#0F3A28" letter-spacing="1">nestly</text>
+
+  <!-- Tagline -->
+  <line x1="250" y1="168" x2="488" y2="168" stroke="#B33B4E" stroke-width="2"/>
+  <text x="250" y="192" font-family="Georgia, 'Times New Roman', serif" font-size="17"
+        fill="#4E6B5C" letter-spacing="3.5">HOME &amp; LIVING</text>
+</svg>
