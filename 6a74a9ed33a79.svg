@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1600 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1F6F2"/>
+      <stop offset="100%" stop-color="#E4EFE7"/>
+    </linearGradient>
+    <linearGradient id="archGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F8F63"/>
+      <stop offset="100%" stop-color="#0F4A32"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C24A5E"/>
+      <stop offset="100%" stop-color="#9C2E40"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1600" height="500" fill="url(#bgGrad)"/>
+
+  <!-- faint oversized arch silhouette, decorative, bleeding off the right edge -->
+  <path d="M 1180 500 L 1180 260 A 260 260 0 0 1 1700 260 L 1700 500 Z"
+        fill="#186B48" opacity="0.08"/>
+  <path d="M 1280 500 L 1280 300 A 190 190 0 0 1 1660 300 L 1660 500 Z"
+        fill="#186B48" opacity="0.10"/>
+
+  <!-- decorative leaf sprigs scattered top-right, echoing the logo -->
+  <g opacity="0.5">
+    <path d="M 1420 70 C 1440 40 1480 30 1510 40 C 1490 55 1470 75 1460 100 C 1440 90 1425 82 1420 70 Z" fill="#2F8F63"/>
+    <path d="M 1500 120 C 1520 95 1555 90 1580 100 C 1562 112 1545 128 1536 150 C 1518 140 1505 132 1500 120 Z" fill="#186B48"/>
+  </g>
+
+  <!-- small ruby accent dot, echoing the leaf-berry mark -->
+  <circle cx="1360" cy="150" r="9" fill="#B33B4E" opacity="0.85"/>
+
+  <!-- eyebrow label -->
+  <text x="130" y="175" font-family="Georgia, 'Times New Roman', serif" font-size="18"
+        fill="#B33B4E" letter-spacing="4">CURATED HOME &amp; KITCHEN</text>
+
+  <!-- headline -->
+  <text x="128" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="64"
+        fill="#0F3A28" font-weight="bold">Home, curated</text>
+  <text x="128" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="64"
+        fill="#0F3A28" font-weight="bold">with care.</text>
+
+  <!-- subhead -->
+  <text x="130" y="368" font-family="Georgia, 'Times New Roman', serif" font-size="20"
+        fill="#4E6B5C">Thoughtfully chosen kitchen and living pieces</text>
+  <text x="130" y="396" font-family="Georgia, 'Times New Roman', serif" font-size="20"
+        fill="#4E6B5C">that make a house feel like yours.</text>
+
+  <!-- CTA button -->
+  <rect x="130" y="425" width="200" height="56" rx="28" fill="url(#btnGrad)"/>
+  <text x="230" y="460" font-family="Georgia, 'Times New Roman', serif" font-size="19"
+        fill="#FDF8F3" text-anchor="middle" letter-spacing="1">Shop Now</text>
+
+  <!-- small arch-leaf mark near the button, tying back to the logo -->
+  <g transform="translate(1160,340) scale(0.55)">
+    <path d="M -56 8 L 0 -50 L 56 8" fill="none" stroke="url(#archGrad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="-68" y1="8" x2="68" y2="8" stroke="#0B3A28" stroke-width="9" stroke-linecap="round"/>
+    <path d="M -6 8 C -6 -22 10 -38 34 -46 C 16 -30 10 -14 8 6" fill="#2F8F63"/>
+    <circle cx="32" cy="-44" r="7" fill="#B33B4E"/>
+  </g>
+</svg>
